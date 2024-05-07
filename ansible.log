@@ -102,3 +102,43 @@ The offending line appears to be:
 2024-05-06 23:01:07,004 p=28563 u=student n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
 2024-05-06 23:01:07,007 p=28563 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
 2024-05-06 23:01:07,007 p=28563 u=student n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-05-07 18:47:01,337 p=10805 u=student n=ansible | playbook: playbook.yml
+2024-05-07 18:47:04,705 p=10833 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *************************************************************************************************************
+2024-05-07 18:47:04,727 p=10833 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************
+2024-05-07 18:47:04,926 p=10833 u=student n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-05-07 18:47:04,928 p=10833 u=student n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2024-05-07 18:47:04,929 p=10833 u=student n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-05-07 18:47:44,310 p=11112 u=student n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-05-07 18:47:44,460 p=11112 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *************************************************************************************************************
+2024-05-07 18:47:44,460 p=11112 u=student n=ansible | skipping: no hosts matched
+2024-05-07 18:47:44,461 p=11112 u=student n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2024-05-07 18:47:56,022 p=11189 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *************************************************************************************************************
+2024-05-07 18:47:56,044 p=11189 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************
+2024-05-07 18:47:58,370 p=11189 u=student n=ansible | fatal: [192.168.125.134]: FAILED! => {"msg": "Missing sudo password"}
+2024-05-07 18:47:58,373 p=11189 u=student n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2024-05-07 18:47:58,373 p=11189 u=student n=ansible | 192.168.125.134            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-05-07 18:48:32,930 p=11430 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *************************************************************************************************************
+2024-05-07 18:48:32,950 p=11430 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************
+2024-05-07 18:48:34,442 p=11430 u=student n=ansible | fatal: [192.168.125.134]: FAILED! => {"msg": "Missing sudo password"}
+2024-05-07 18:48:34,445 p=11430 u=student n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2024-05-07 18:48:34,446 p=11430 u=student n=ansible | 192.168.125.134            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-05-07 18:49:53,925 p=12042 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *************************************************************************************************************
+2024-05-07 18:49:53,955 p=12042 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************
+2024-05-07 18:49:55,711 p=12042 u=student n=ansible | fatal: [192.168.125.134]: FAILED! => {"msg": "Missing sudo password"}
+2024-05-07 18:49:55,713 p=12042 u=student n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2024-05-07 18:49:55,714 p=12042 u=student n=ansible | 192.168.125.134            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-05-07 18:50:04,308 p=12132 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *************************************************************************************************************
+2024-05-07 18:50:04,326 p=12132 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************
+2024-05-07 18:50:05,790 p=12132 u=student n=ansible | fatal: [192.168.125.134]: FAILED! => {"msg": "Missing sudo password"}
+2024-05-07 18:50:05,792 p=12132 u=student n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2024-05-07 18:50:05,792 p=12132 u=student n=ansible | 192.168.125.134            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-05-07 18:53:17,099 p=12499 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *************************************************************************************************************
+2024-05-07 18:53:17,120 p=12499 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************
+2024-05-07 18:53:21,998 p=12499 u=student n=ansible | ok: [192.168.125.134]
+2024-05-07 18:53:22,037 p=12499 u=student n=ansible | TASK [Display message with debug] ****************************************************************************************************************************
+2024-05-07 18:53:22,071 p=12499 u=student n=ansible | ok: [192.168.125.134] => {
+    "msg": "Congratulations! You have successfully executed a Playbook via Jenkins"
+}
+2024-05-07 18:53:22,109 p=12499 u=student n=ansible | PLAY RECAP ***************************************************************************************************************************************************
+2024-05-07 18:53:22,110 p=12499 u=student n=ansible | 192.168.125.134            : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
