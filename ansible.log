@@ -1,0 +1,104 @@
+2024-05-06 22:46:28,337 p=22522 u=student n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-05-06 22:46:28,612 p=22522 u=student n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: node1
+
+2024-05-06 22:46:28,614 p=22522 u=student n=ansible | playbook: useradd.yml
+2024-05-06 22:46:37,439 p=22581 u=student n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: node1
+
+2024-05-06 22:46:37,440 p=22581 u=student n=ansible | playbook: useradd.yml
+2024-05-06 22:47:00,707 p=22732 u=student n=ansible | playbook: useradd.yml
+2024-05-06 22:47:04,058 p=22753 u=student n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-05-06 22:47:04,166 p=22753 u=student n=ansible | playbook: useradd.yml
+2024-05-06 22:48:29,500 p=23312 u=student n=ansible | playbook: useradd.yml
+2024-05-06 22:48:38,273 p=23369 u=student n=ansible | PLAY [Add an user with password on node1] **************************************************************************************************************************************
+2024-05-06 22:48:38,298 p=23369 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2024-05-06 22:48:40,319 p=23369 u=student n=ansible | fatal: [192.168.125.128]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Host key verification failed.", "unreachable": true}
+2024-05-06 22:48:40,321 p=23369 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2024-05-06 22:48:40,321 p=23369 u=student n=ansible | 192.168.125.128            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-05-06 22:48:44,239 p=23415 u=student n=ansible | PLAY [Add an user with password on node1] **************************************************************************************************************************************
+2024-05-06 22:48:44,254 p=23415 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2024-05-06 22:48:45,891 p=23415 u=student n=ansible | fatal: [192.168.125.128]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '192.168.125.128' (ED25519) to the list of known hosts.\r\nstudent@192.168.125.128: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-05-06 22:48:45,894 p=23415 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2024-05-06 22:48:45,895 p=23415 u=student n=ansible | 192.168.125.128            : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-05-06 22:49:29,099 p=23701 u=student n=ansible | playbook: useradd.yml
+2024-05-06 22:49:35,000 p=23734 u=student n=ansible | PLAY [Add an user with password on node1] **************************************************************************************************************************************
+2024-05-06 22:49:35,015 p=23734 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2024-05-06 22:49:36,999 p=23734 u=student n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'localhost' (ED25519) to the list of known hosts.\r\nstudent@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-05-06 22:49:37,000 p=23734 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2024-05-06 22:49:37,001 p=23734 u=student n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-05-06 22:50:17,356 p=23956 u=student n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  but found another document
+
+The error appears to be in '/home/student/jenkins-ansible-project/playbook.yml': line 11, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+---
+^ here
+
+2024-05-06 22:50:30,490 p=24043 u=student n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  but found another document
+
+The error appears to be in '/home/student/jenkins-ansible-project/playbook.yml': line 11, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+---
+^ here
+
+2024-05-06 22:51:13,142 p=24335 u=student n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  but found another document
+
+The error appears to be in '/home/student/jenkins-ansible-project/playbook.yml': line 11, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+---
+^ here
+
+2024-05-06 22:51:34,897 p=24473 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *******************************************************************************************************************************
+2024-05-06 22:51:34,913 p=24473 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2024-05-06 22:51:35,050 p=24473 u=student n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-05-06 22:51:35,052 p=24473 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2024-05-06 22:51:35,053 p=24473 u=student n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-05-06 22:53:29,401 p=25284 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *******************************************************************************************************************************
+2024-05-06 22:53:29,423 p=25284 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2024-05-06 22:53:29,558 p=25284 u=student n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-05-06 22:53:29,560 p=25284 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2024-05-06 22:53:29,560 p=25284 u=student n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-05-06 22:54:24,637 p=25765 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *******************************************************************************************************************************
+2024-05-06 22:54:24,653 p=25765 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2024-05-06 22:54:24,797 p=25765 u=student n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-05-06 22:54:24,800 p=25765 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2024-05-06 22:54:24,800 p=25765 u=student n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-05-06 22:59:44,208 p=27986 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *******************************************************************************************************************************
+2024-05-06 22:59:44,224 p=27986 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2024-05-06 22:59:44,368 p=27986 u=student n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-05-06 22:59:44,370 p=27986 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2024-05-06 22:59:44,370 p=27986 u=student n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-05-06 23:00:32,370 p=28337 u=student n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-05-06 23:00:32,498 p=28337 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *******************************************************************************************************************************
+2024-05-06 23:00:32,499 p=28337 u=student n=ansible | skipping: no hosts matched
+2024-05-06 23:00:32,500 p=28337 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2024-05-06 23:01:06,850 p=28563 u=student n=ansible | PLAY [Simple playbook for jenkins demonstration] *******************************************************************************************************************************
+2024-05-06 23:01:06,867 p=28563 u=student n=ansible | TASK [Gathering Facts] *********************************************************************************************************************************************************
+2024-05-06 23:01:07,004 p=28563 u=student n=ansible | fatal: [localhost]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: student@localhost: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).", "unreachable": true}
+2024-05-06 23:01:07,007 p=28563 u=student n=ansible | PLAY RECAP *********************************************************************************************************************************************************************
+2024-05-06 23:01:07,007 p=28563 u=student n=ansible | localhost                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   

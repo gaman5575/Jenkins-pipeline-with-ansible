@@ -1,0 +1,9 @@
+---
+- name: Simple playbook for jenkins demonstration
+  hosts: all
+  remote_user: student
+  become: true
+  tasks:
+    - name: Display message with debug
+      ansible.builtin.debug:
+        msg: "Congratulations! You have successfully executed a Playbook via Jenkins"
