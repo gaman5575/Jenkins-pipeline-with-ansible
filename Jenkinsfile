@@ -1,6 +1,6 @@
 pipeline {
     agent { 
-        label 'ansible_node'
+        label 'ansible-node'
     }
     
     stages {
